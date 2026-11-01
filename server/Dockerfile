@@ -4,6 +4,8 @@ WORKDIR /usr/src/server
 
 COPY package*.json ./
 
+RUN npm i -g yarn
+
 RUN yarn install
 
 COPY . .
